@@ -88,8 +88,8 @@ return {
     event = "VeryLazy",
     opts = {
       options = {
-        globalstatus = false,
-        theme = "horizon",
+        globalstatus = true,
+        theme = "OceanicNext",
       },
     },
   },
