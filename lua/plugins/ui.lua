@@ -86,12 +86,9 @@ return {
   {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
-    opts = {
-      options = {
-        globalstatus = true,
-        theme = "OceanicNext",
-      },
-    },
+    opts = function(_, opts)
+      table.insert(opts.sections.lualine_x, 2, require("lazyvim.util").lualine.cmp_source("codeium"))
+    end,
   },
   -- filename
   {
